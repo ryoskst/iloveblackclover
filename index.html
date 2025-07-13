@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BLACK CLOVER IS RETURNING</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/script.js"></script>
+  <style>
+    body {
+      background-color: #000;
+      color: white;
+      font-family: Arial, sans-serif;
+      
+    }
+
+    a {
+      color: white;
+    }
+
+    #container {
+      width: 80%;
+      margin: 20;
+    }
+
+    #header {
+      text-align: center;
+      padding: 29px;
+    }
+
+    #main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column; /* stack vertically */
+      align-items: center;    /* center horizontally */
+      gap: 40px;
+    }
+
+    /* Container for the three side-by-side items */
+    .content-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: nowrap;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .poster {
+      width: 392px;
+      height: auto;
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    .poster2 {
+      width: 375px;
+      height: auto;
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    .js-box {
+      margin-top: 160px;
+      flex: 1 1 420px;
+      max-width: 600px;
+      text-align: center;
+      margin: 120;
+      padding: 10px;
+      background-color: #ae8625;
+      border-radius: 20px;
+    }
+
+    .js-box h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    input, button {
+      padding: 6px;
+      font-size: 14px;
+      font-family: Arial, sans-serif;
+      margin: 5px 0;
+      width: 90%;
+      border: none;
+      border-radius: 4px;
+    }
+
+    #response {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FF0000;
+    }
+
+    /* Template credit styling */
+    #template-credit {
+      margin-top: 20px;
+      color: #ffffff;
+      text-align: center;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    #template-credit a {
+      color: #ae8625;
+      text-decoration: none;
+    }
+
+    #template-credit a:hover {
+      text-decoration: underline;
+    }
+
+    #footer {
+      margin-top: 40px;
+      font-size: 14px;
+      text-align: center;
+      border-top: 1px solid #444;
+      padding-top: 10px;
+      color: #888;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body onload="welcomeMessage()">
+
+  <div id="container">
+    <div id="header">
+      <h1>BLACK CLOVER IS RETURNING!!!</h1>
+    </div>
+
+    <div id="main">
+      <div class="content-row">
+        <!-- Left image -->
+        <img src="images/blackclover.jpg" alt="Black Clover Poster" class="poster" />
+
+        <!-- JS question box centered -->
+        <div class="js-box">
+          <h2>Would you like to become the Wizard King?</h2>
+          <input type="text" id="userInput" placeholder="Type your answer..." />
+          <button onclick="wizardKing()">Submit</button>
+          <p id="response"></p>
+        </div>
+
+        <!-- Right image -->
+        <img src="images/header.jpg" alt="Header Image" class="poster2" />
+      </div>
+
+      <!-- Template credit centered -->
+      <p id="template-credit">
+        Original Template from: 
+        <a href="https://all-free-download.com/free-website-templates/download/a_symphony_of_horror_template_6890066.html" target="_blank" rel="noopener noreferrer">
+          https://all-free-download.com
+        </a>
+      </p>
+    </div>
+
+    <div id="footer">
+       2025 Sato Ryosuke (ID: 22229039) | All Rights Reserved!!!
+    </div>
+  </div>
+
+</body>
+</html>
